@@ -1,0 +1,21 @@
+
+@keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  
+@keyframes glow {
+    0% {
+        background: $black;
+        color: $white;
+    }
+    100% {
+        background: $lightBlue;
+        color: $white;
+    }
+  }

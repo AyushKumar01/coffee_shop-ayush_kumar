@@ -1,0 +1,173 @@
+@import "./partials/reset";
+@import "./partials/variable";
+@import "./partials/mixin";
+@import "./partials/keyframe";
+@import "./partials/header";
+
+
+.main__heading {
+    display: flex;
+    background-color: $brightPeach;
+    padding: 10em 0;
+}
+
+.main__heading--position {
+    margin-left: 8.5em;
+    width: 50%;
+}
+
+.main__img--position {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10em;
+}
+
+.main__heading-one {
+    @include headingTwo;
+    color: $lightBlack;
+}
+
+.main__para {
+    max-width: 60%;  
+    font-size: 21px;
+}
+
+.main__btn {
+   @include animationBTN;
+}
+
+// ===================================
+
+.cardSection {
+    text-align: center;
+    background-color: $darkWhite;
+    
+}
+
+.card__heading {
+    @include headingTwo;
+    margin: 0;
+    padding: 7vh;
+    color: $lightBlack;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.card__box {
+    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 20em;
+    padding-top: 2em
+
+}
+
+.card__text-block {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__name {
+    @include headingThree;
+    margin-bottom: 0;
+}
+
+.card__price--pad {
+    margin-left: 1em;
+}
+.card__price {
+    color: $lightBlue;
+    font-size: 5vh;
+    margin: 0; 
+    
+}
+
+.card__btn {
+    margin: 2.5em;
+    @include animationBTN;
+}
+
+// ======================================
+
+.different {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10em;
+}
+
+.different__heading {
+    @include headingTwo;
+    color: $lightBlack;
+}
+
+.different__para { 
+    font-size: 21px;
+}
+
+.different__img {
+    height: 50px;
+    margin: 0 6em 4em 0;
+}
+
+.different__btn {
+    @include animationBTN;
+}
+
+.can-background {
+    background-image: url(../assets/coffee-shop-assets/coldbrewbackground.png);
+    width: 435px;
+    height: 435px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.can {
+    animation: rotate 2s linear infinite;
+    animation-play-state: paused;
+    &:hover {
+      animation-play-state: running;
+    }
+}
+// =====================================
+
+.banner {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: $white;
+    text-align: center;
+    width: 80vw;
+    font-size: 45px;
+    padding: 2vh;
+    margin:  10% 10%;
+    animation: glow 2.5s linear infinite alternate;
+
+}
+// ==========================================
+
+.footer {
+    background-color: $brightPeach;
+    color: $lightBlack;
+    display: flex;
+    justify-content: space-around;
+    padding: 5em 0;
+}
+
+.footer__heading {
+   @include headingThree;
+}
+
+.footer__para {
+    margin: 0;
+}
+
+.footer__right-img {
+    height: 50px;
+}

@@ -1,0 +1,39 @@
+
+@mixin animationBTN {
+    background-color: $lightBlue;
+    width: 180px;
+    height: 55px;
+    color: $white;
+    font-size: 21px;
+    border: none;
+    position: relative;
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
+        width: 180px;
+        height: 55px;
+        border: 2px solid $black;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transition: transform 0.3s;
+        transform: translate(-5px, -5px); 
+    }
+    
+    &:active::after {
+        transform: translate(0px, 0px);
+
+    }
+    
+}
+
+@mixin headingTwo {
+    font-size: 60px;
+    font-weight: 100;  
+}
+
+@mixin headingThree {
+    font-size: 33px;
+    font-weight: 100;
+}
